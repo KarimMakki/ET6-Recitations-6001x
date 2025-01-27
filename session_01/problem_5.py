@@ -50,3 +50,16 @@ Example Scenarios:
     Input: 0
     Output: "x is zero"
 """
+x = int(input("please enter a number"))
+check_positive = x > 0
+check_even =  x % 2 == 0
+check_zero = x == 0
+
+if check_positive and check_even:
+    print("x is a positive even number")
+elif check_positive and not(check_even):
+    print("x is a positive odd number")
+elif check_zero:
+    print("x is zero")
+else:
+    print("x is negative number")
