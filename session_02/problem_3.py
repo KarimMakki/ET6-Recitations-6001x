@@ -14,15 +14,17 @@ Instructions:
 """
 # Get user input
 sentence = input("Enter a sentence: ")
+
 # Define vowels
-vowels = ["a", "e", "i", "o", "u"]
+vowels = "auioeAUIOE"
+
 # Replace vowels with '*'
-modifiedSentence = ""
+new_sentence = ""
 for char in sentence:
-  if char in vowels:
-    char = "*"
-    modifiedSentence += char
-  else:   
-    modifiedSentence += char
+    if char in vowels:
+        new_sentence += "*"
+    else:
+        new_sentence += char
+
 # Print the modified sentence
-print(modifiedSentence)
+print("Modified sentence:", new_sentence)

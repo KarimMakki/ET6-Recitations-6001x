@@ -38,11 +38,12 @@ Example Scenarios:
     Input: 0
     Output: "The number is zero"
 """
-value = float(input("Please enter a number."))
+number = float(input("Enter a number: "))
 
-if value > 0:
+# Conditional checks
+if number > 0:
     print("The number is positive")
-elif value < 0:
+elif number < 0:
     print("The number is negative")
 else:
     print("The number is zero")

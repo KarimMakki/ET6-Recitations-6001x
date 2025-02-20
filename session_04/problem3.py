@@ -1,15 +1,4 @@
-# 20.0/20.0 points (graded)
-# Write a Python function that returns a list of keys in aDict with the value target. The list of keys you return should be sorted in increasing order. The keys and values in aDict are both integers. (If aDict does not contain the value target, you should return an empty list.)
 
-# This function takes in a dictionary and an integer and returns a list.
-# This is trick problem you should figure out how it is!
-		 		    		
-#def keysWithValue(aDict, target):
-result_list = []
-'''
-    aDict: a dictionary
-    target: an integer
-    '''
 #***********************************************************************************************************************************
 """
 Created on Fri Feb 14 17:45:09 2025
@@ -51,20 +40,13 @@ def keysWithValue(aDict, target):
     target: an integer
     Returns: a list of keys in aDict with the value target, sorted in increasing order.
     '''
-    # Initialize an empty list to store matching keys
-    result_list = []
+    result_list = []  # Initialize an empty list to store matching keys
     
-    # Iterate through each key in the dictionary
-    for key in aDict:
-      # Check if the value matches the target
-      if aDict[key] == target:
-        # Append the key to the result list
-        result_list.append(key)
-          
-    # Sort the list of keys in increasing order
-    result_list.sort()
-    # Return the sorted list
-    return result_list
-
+    for key in aDict:  # Iterate through each key in the dictionary
+        if aDict[key] == target:  # Check if the value matches the target
+            result_list.append(key)  # Append the key to the result list
+    
+    result_list.sort()  # Sort the list of keys in increasing order
+    return result_list  # Return the sorted list
 aDict = {5: 1, 3: 90, 4: 90, 12: 90, 22: 90, 21: 100}
-print(keysWithValue(aDict, 50))
+print(keysWithValue(aDict, 90))

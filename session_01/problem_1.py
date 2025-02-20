@@ -17,4 +17,4 @@ Instructions
 2. Verify your variable by adding the line print(savings) to the script and running it.
 """
 savings = 100
-print(savings)
+print(savings) 

@@ -25,9 +25,15 @@ Instructions
 half = 0.5
 intro = "Hello! How are you?"
 is_good = True
+
+# Perform type conversions
 half_int = int(half)
 is_good_str = str(is_good)
-message = intro + is_good_str
-print(half_int)
-print(is_good_str)
-print(message)
+
+# Combine variables into a message
+message = intro + " " + is_good_str
+
+# Print results
+print("half_int:", half_int)
+print("is_good_str:", is_good_str)
+print("message:", message)
